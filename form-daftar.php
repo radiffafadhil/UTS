@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Formulir Pendaftaran Siswa Baru | SMK Coding</title>
+    <title>KAMPUS XYZ</title>
 </head>
 
 <body>
     <header>
-        <h3>Formulir Pendaftaran Siswa Baru</h3>
+        <h3>Formulir Pendaftaran MahaSiswa Baru</h3>
     </header>
 
     <form action="proses-pendaftaran.php" method="POST">

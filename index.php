@@ -6,7 +6,7 @@
 
 <body>
     <header>
-        <h3>Pendaftaran Siswa Baru</h3>
+        <h3>Pendaftaran MahaSiswa Baru</h3>
         </header>
 
     <h4>Menu</h4>

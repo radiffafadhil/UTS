@@ -3,12 +3,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pendaftaran Siswa Baru | SMK Coding</title>
+    <title>Pendaftaran MahaSiswa Baru</title>
 </head>
 
 <body>
     <header>
-        <h3>Siswa yang sudah mendaftar</h3>
+        <h3>MahaSiswa yang sudah mendaftar</h3>
     </header>
 
     <nav>
