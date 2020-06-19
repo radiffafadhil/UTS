@@ -5,7 +5,7 @@ include("config.php");
 if( isset($_GET['nim']) ){
 
     // ambil id dari query string
-    $id = $_GET['nim'];
+    $nim = $_GET['nim'];
 
     // buat query hapus
     $sql = "DELETE FROM mahasiswa WHERE nim=$nim";
