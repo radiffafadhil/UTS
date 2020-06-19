@@ -13,7 +13,7 @@ $nim = $_GET['nim'];
 // buat query untuk ambil data dari database
 $sql = "SELECT * FROM mahasiswa WHERE nim=$nim";
 $query = mysqli_query($db, $sql);
-$siswa = mysqli_fetch_assoc($query);
+$mahasiswa = mysqli_fetch_assoc($query);
 
 // jika data yang di-edit tidak ditemukan
 if( mysqli_num_rows($query) < 1 ){
@@ -42,11 +42,11 @@ if( mysqli_num_rows($query) < 1 ){
 
         <p>
             <label for="nama">Nama: </label>
-            <input type="text" name="nama" placeholder="nama lengkap" value="<?php echo $siswa['nama'] ?>" />
+            <input type="text" name="nama" placeholder="nama lengkap" value="<?php echo $mahasiswa['nama'] ?>" />
         </p>
         <p>
             <label for="tgl_lahir">Tanggal Lahir: </label>
-            <textarea name="date"><?php echo $mahasiswa['tgl_lahir'] ?></date>
+            <input type="date" name="tgl_lahir"><?php echo $mahasiswa['tgl_lahir'] ?></date>
         </p>
         <p>
             <label for="alamat">Alamat: </label>

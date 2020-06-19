@@ -15,7 +15,7 @@
 
         <p>
             <label for="nim">NIM: </label>
-            <input type="text" name="NIM"></textarea>
+            <input type="text" name="nim"></textarea>
         </p>
 
         <p>
