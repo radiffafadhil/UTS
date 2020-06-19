@@ -3,6 +3,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>Pendaftaran MahaSiswa Baru</title>
 </head>
 
@@ -15,22 +20,19 @@
         <a href="form-daftar.php">[+] Tambah Baru</a>
     </nav>
 
-    <br>
-
-    <table border="1">
-    <thead>
-        <tr>
-            <th>NIM</th>
-            <th>Nama</th>
-            <th>Tanggal Lahir</th>
-            <th>Alamat</th>
-            <th>Jenis Kelamin</th>
-            <th>Tindakan</th>
-            </tr>
-    </thead>
-    <tbody>
-
-        <?php
+    <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">NIM</th>
+      <th scope="col">Nama</th>
+      <th scope="col">Tanggal Lahir</th>
+      <th scope="col">Alamat</th>
+      <th scope="col">Jenis Kelamin</th>
+      <th scope="col">Tindakan</th>
+    </tr>
+  </thead>
+  <tbody>
+  <?php
         $sql = "SELECT * FROM mahasiswa";
         $query = mysqli_query($db, $sql);
 
@@ -51,11 +53,13 @@
             echo "</tr>";
         }
         ?>
-
-    </tbody>
-    </table>
+  </tbody>
+</table>
 
     <p>Total: <?php echo mysqli_num_rows($query) ?></p>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  
     </body>
 </html>
